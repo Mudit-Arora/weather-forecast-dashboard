@@ -1,5 +1,5 @@
 import streamlit as st
-import plotly.express as px
+import plotly as px
 from backend import get_data
 
 st.title("Weather Forecast for the Next Days")
@@ -31,4 +31,4 @@ if place:
             st.image(image_paths, width=115)
 
     except KeyError:
-        st.write("This place does nto exist")
+        st.write("This place does not exist")
